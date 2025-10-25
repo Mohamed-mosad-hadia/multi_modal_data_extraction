@@ -1,0 +1,454 @@
+{
+  "qa_pairs": [
+    {
+      "id": "qa_001",
+      "question": "What is This?",
+      "answer": "chronic condition that worsens with specific dietary triggers",
+      "source_document": "cholera_case_study.pdf",
+      "page_number": 3,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_002",
+      "question": "What is As there?",
+      "answer": "out break of watery massive diarrhea in this village cholera out break is suspected",
+      "source_document": "cholera_case_study.pdf",
+      "page_number": 4,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_003",
+      "question": "What is Cholera?",
+      "answer": "acute diarrhoeal infection caused by ingestion of food or water contaminated with the bacterium Vibrio cholerae",
+      "source_document": "cholera_case_study.pdf",
+      "page_number": 5,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_004",
+      "question": "What is Cholera?",
+      "answer": "extremely virulent disease",
+      "source_document": "cholera_case_study.pdf",
+      "page_number": 5,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_005",
+      "question": "What causes Pathophysiology Cholera?",
+      "answer": "ingestion of food or water contaminated with Vibrio cholerae",
+      "source_document": "cholera_case_study.pdf",
+      "page_number": 5,
+      "confidence": "high",
+      "category": "cause"
+    },
+    {
+      "id": "qa_006",
+      "question": "What is Ultimately it?",
+      "answer": "sole responsibility of the medical professional to make his or her own professional judgements, so as to advise and treat patients appropriately",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 5,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_007",
+      "question": "What is CCC?",
+      "answer": "not-for-profit organization that provides licenses and registration for a variety of users",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 5,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_008",
+      "question": "What is Another important element in the retention of information?",
+      "answer": "depth of learning",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 8,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_009",
+      "question": "What is This?",
+      "answer": "basis of problem-based learning, whereby students explore problems with the help of a facilitator",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 8,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_010",
+      "question": "What is There?",
+      "answer": "previous history of occasional stabbing chest pain for 2 years",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 20,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_011",
+      "question": "What is He?",
+      "answer": "non-smoker who drinks 15 units of alcohol per week",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 20,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_012",
+      "question": "What is As pericarditis?",
+      "answer": "inflammatory disease, the white cell count, ESR and serum CRP are often raised",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 21,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_013",
+      "question": "What is The report has come back from the microbiology laboratory showing that there?",
+      "answer": "scanty growth of Pseudomonas on culture of the sputum",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 22,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_014",
+      "question": "What is Cystic fibrosis should always be considered when there?",
+      "answer": "story of repeated chest infections in a young person",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 23,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_015",
+      "question": "What is There?",
+      "answer": "small diurnal variation in normals, and a variation of >15 per cent is diagnostic of asthma",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 27,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_016",
+      "question": "What is Cough?",
+      "answer": "common side effect in patients treated with angiotensin-converting enzyme (ACE) inhibitors",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 27,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_017",
+      "question": "What is Jaundice usually occurs if there?",
+      "answer": "stone in the common bile duct",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 29,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_018",
+      "question": "What is There?",
+      "answer": "trend to performing immediate cholecystectomy in low risk patients",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 29,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_019",
+      "question": "What is Smoking?",
+      "answer": "risk factor for carcinoma of the colon",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 31,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_020",
+      "question": "How is ascites treated?",
+      "answer": "a low sodium diet and spironolactone",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 33,
+      "confidence": "high",
+      "category": "treatment"
+    },
+    {
+      "id": "qa_021",
+      "question": "What is He?",
+      "answer": "little tender in the right upper quadrant of the abdomen",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 34,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_022",
+      "question": "What is She?",
+      "answer": "African Caribbean, having emigrated to the United Kingdom in the 1960s",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 36,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_023",
+      "question": "What is Hyperparathyroidism?",
+      "answer": "result of elevated serum phosphate levels due to decreased renal clearance of phosphate and reduced vitamin D levels (the kidney is the site of hydroxylation of 25-hydroxycholecalciferol to the active form 1,25-dihydroxycholecalciferol)",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 37,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_024",
+      "question": "What is Renal ultrasound?",
+      "answer": "essential investigation",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 37,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_025",
+      "question": "What is He?",
+      "answer": "retired miner and lives with his wife in a terraced house",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 40,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_026",
+      "question": "What is This?",
+      "answer": "commonest cause in day-to-day clinical practice",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 41,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_027",
+      "question": "What is Bronchial carcinoma?",
+      "answer": "possibility as he is a heavy smoker, and the onset of his Cushing’s syndrome has been rapid",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 41,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_028",
+      "question": "What is Transsphenoidal microadenomectomy?",
+      "answer": "treatment of choice as it cures the patient and leaves them with normal hypothalamic–pituitary–adrenal function",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 41,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_029",
+      "question": "What is The haematological investigations suggest that there?",
+      "answer": "bone marrow problem which is likely to be related to the bony tenderness in the thoracic spine",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 45,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_030",
+      "question": "What is He?",
+      "answer": "retired university lecturer",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 48,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_031",
+      "question": "What is He?",
+      "answer": "non-smoker and drinks a bottle of wine a week",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 48,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_032",
+      "question": "What is This?",
+      "answer": "degenerative disease of unknown cause that affects the motor neurones of the spinal cord, the cranial nerve nuclei, and the motor cortex",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 49,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_033",
+      "question": "What is Weakness and wasting of the muscles of one hand or arm?",
+      "answer": "commonest presentation",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 49,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_034",
+      "question": "What is Unfortunately motor neurone disease?",
+      "answer": "progressive and incurable condition",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 49,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_035",
+      "question": "What is She?",
+      "answer": "non-smoker and drinks about 15 units of alcohol per week",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 50,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_036",
+      "question": "What causes 100 Cases in Clinical Medicine answer 14 This woman’s generalized weakness?",
+      "answer": "myasthenia gravis",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 51,
+      "confidence": "high",
+      "category": "cause"
+    },
+    {
+      "id": "qa_037",
+      "question": "What is There?",
+      "answer": "characteristic facial appearance with frontal baldness, expressionless facies and sunken cheeks",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 51,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_038",
+      "question": "What is He?",
+      "answer": "non-smoker and drinks about 15 units of alcohol per week",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 52,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_039",
+      "question": "What is He?",
+      "answer": "businessman and returned 3 weeks ago from a business trip to Thailand",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 52,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_040",
+      "question": "What is There?",
+      "answer": "brown macular rash on his palms and soles",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 52,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_041",
+      "question": "What causes Pseudogout?",
+      "answer": "deposition of calcium pyrophosphate crystals and would be expected to show calcification in the articular cartilage in the knee joint",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 55,
+      "confidence": "high",
+      "category": "cause"
+    },
+    {
+      "id": "qa_042",
+      "question": "What is She?",
+      "answer": "non-smoker and drinks a small amount of alcohol socially",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 56,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_043",
+      "question": "What is Retinal haemorrhages tend to occur if there?",
+      "answer": "combination of severe thrombocytopenia and anaemia",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 57,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_044",
+      "question": "What is AML?",
+      "answer": "most common acute leukaemia in adults with a mean age at presentation of 65 years",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 57,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_045",
+      "question": "What is She?",
+      "answer": "retired teacher and lives alone",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 60,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_046",
+      "question": "What is She?",
+      "answer": "non-smoker and drinks about 15 units of alcohol per week",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 60,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_047",
+      "question": "What is There?",
+      "answer": "family history of thyroid disease; however, the anaemia is too severe for hypothyroidism",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 61,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_048",
+      "question": "What is Pernicious anaemia?",
+      "answer": "most likely cause of this patient’s vitamin B deficiency",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 61,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_049",
+      "question": "What is There?",
+      "answer": "previous history of hepatitis 4 years earlier, and he had glandular fever at the age of 18 years",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 64,
+      "confidence": "high",
+      "category": "definition"
+    },
+    {
+      "id": "qa_050",
+      "question": "What is Pneumocystis jiroveci?",
+      "answer": "fungus previously called Pneumocystis carinii",
+      "source_document": "hepatitis_case_study_Q&A.pdf",
+      "page_number": 67,
+      "confidence": "high",
+      "category": "definition"
+    }
+  ]
+}

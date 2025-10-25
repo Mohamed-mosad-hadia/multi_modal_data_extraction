@@ -1,0 +1,515 @@
+{
+  "conversations": [
+    {
+      "conversation_id": "conv_001",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, family history of thyroid disease; however, the anaemia is too severe for hypothyroidism.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p61"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, result of elevated serum phosphate levels due to decreased renal clearance of phosphate and reduced vitamin d levels (the kidney is the site of hydroxylation of 25-hydroxycholecalciferol to the active form 1,25-dihydroxycholecalciferol).",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p37"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Do we know what causes this condition?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, ingestion of food or water contaminated with vibrio cholerae.",
+          "source_reference": "cholera_case_study.pdf:p5"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_002",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, story of repeated chest infections in a young person.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p23"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, little tender in the right upper quadrant of the abdomen.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p34"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, retired university lecturer.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p48"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, african caribbean, having emigrated to the united kingdom in the 1960s.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p36"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_003",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker and drinks about 15 units of alcohol per week.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p52"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, possibility as he is a heavy smoker, and the onset of his cushing’s syndrome has been rapid.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p41"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker and drinks about 15 units of alcohol per week.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p50"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, combination of severe thrombocytopenia and anaemia.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p57"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_004",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, brown macular rash on his palms and soles.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p52"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, retired teacher and lives alone.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p60"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, bone marrow problem which is likely to be related to the bony tenderness in the thoracic spine.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p45"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, degenerative disease of unknown cause that affects the motor neurones of the spinal cord, the cranial nerve nuclei, and the motor cortex.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p49"
+        },
+        {
+          "turn_id": 9,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 10,
+          "speaker": "doctor",
+          "text": "Based on your description, extremely virulent disease.",
+          "source_reference": "cholera_case_study.pdf:p5"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_005",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, common side effect in patients treated with angiotensin-converting enzyme (ace) inhibitors.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p27"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, retired miner and lives with his wife in a terraced house.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p40"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker and drinks a small amount of alcohol socially.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p56"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, most common acute leukaemia in adults with a mean age at presentation of 65 years.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p57"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_006",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, previous history of occasional stabbing chest pain for 2 years.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p20"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, stone in the common bile duct.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p29"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Do we know what causes this condition?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, myasthenia gravis.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p51"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, treatment of choice as it cures the patient and leaves them with normal hypothalamic–pituitary–adrenal function.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p41"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_007",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, scanty growth of pseudomonas on culture of the sputum.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p22"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, not-for-profit organization that provides licenses and registration for a variety of users.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p5"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, businessman and returned 3 weeks ago from a business trip to thailand.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p52"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, sole responsibility of the medical professional to make his or her own professional judgements, so as to advise and treat patients appropriately.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p5"
+        },
+        {
+          "turn_id": 9,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 10,
+          "speaker": "doctor",
+          "text": "Based on your description, out break of watery massive diarrhea in this village cholera out break is suspected.",
+          "source_reference": "cholera_case_study.pdf:p4"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_008",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, commonest cause in day-to-day clinical practice.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p41"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, progressive and incurable condition.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p49"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, risk factor for carcinoma of the colon.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p31"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_009",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker who drinks 15 units of alcohol per week.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p20"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, characteristic facial appearance with frontal baldness, expressionless facies and sunken cheeks.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p51"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, essential investigation.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p37"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, basis of problem-based learning, whereby students explore problems with the help of a facilitator.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p8"
+        },
+        {
+          "turn_id": 9,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 10,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker and drinks about 15 units of alcohol per week.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p60"
+        }
+      ]
+    },
+    {
+      "conversation_id": "conv_010",
+      "topic": "Cholera Case Discussion",
+      "turns": [
+        {
+          "turn_id": 1,
+          "speaker": "patient",
+          "text": "How can this condition be treated?"
+        },
+        {
+          "turn_id": 2,
+          "speaker": "doctor",
+          "text": "Based on your description, a low sodium diet and spironolactone.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p33"
+        },
+        {
+          "turn_id": 3,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 4,
+          "speaker": "doctor",
+          "text": "Based on your description, depth of learning.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p8"
+        },
+        {
+          "turn_id": 5,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 6,
+          "speaker": "doctor",
+          "text": "Based on your description, commonest presentation.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p49"
+        },
+        {
+          "turn_id": 7,
+          "speaker": "patient",
+          "text": "Can you explain what this disease is?"
+        },
+        {
+          "turn_id": 8,
+          "speaker": "doctor",
+          "text": "Based on your description, non-smoker and drinks a bottle of wine a week.",
+          "source_reference": "hepatitis_case_study_Q&A.pdf:p48"
+        }
+      ]
+    }
+  ]
+}
