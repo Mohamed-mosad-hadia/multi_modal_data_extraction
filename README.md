@@ -11,6 +11,10 @@ Transform scanned medical PDFs into structured datasets for downstream analytics
 
 The stack is optimized for developers shipping data products that blend OCR, NLP, and lightweight heuristics.
 
+## How to run 4 scripts 
+- navigate to ETL folder 📂  then   run  [ ./run_etl.sh ] 
+
+
 ## Interesting Techniques Used
 
 - **Rule-based Q&A generation with NLTK** for deterministic question construction and answer span alignment.
