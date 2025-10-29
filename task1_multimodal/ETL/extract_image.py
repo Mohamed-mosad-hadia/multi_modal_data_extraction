@@ -14,7 +14,8 @@ output_json = Path(
 image_output_dir.mkdir(parents=True, exist_ok=True)
 
 # Optional: Tesseract path
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 
 results = []
 pair_id = 1

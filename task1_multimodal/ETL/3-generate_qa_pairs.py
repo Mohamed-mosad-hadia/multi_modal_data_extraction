@@ -6,39 +6,46 @@ Purpose:
 --------
 Generate diverse Question–Answer (Q&A) pairs from extracted medical text
 Use rule-based methods or simple NLP
-
-Inputs:
--------
-- D:\Data_Engineer_Task\task1_multimodal\outputs\extracted_text\extracted_data_cleaned.json
-
-Outputs:
---------
-- qa_pairs.json → structured Q&A pairs with metadata
-
-Requirements:
--------------
-pip install nltk
 """
 
 import json
 import re
-import nltk
 from pathlib import Path
 from typing import List, Dict
-from nltk.tokenize import sent_tokenize
+import logging
+import argparse
+from datetime import datetime
+import sqlite3
 
-nltk.download("punkt")
+
+# Simple sentence tokenizer fallback to avoid external nltk dependency.
+# Uses a basic regex to split on sentence-ending punctuation followed by whitespace.
+def sent_tokenize(text: str) -> List[str]:
+    sentences = re.split(r"(?<=[.!?])\s+", text.strip())
+    return [s for s in sentences if s]
+    nltk.download("punkt")
+
+
+# === Logging Setup ===
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+logger = logging.getLogger("qa_to_sqlite")
 
 
 def extract_qa_from_text(
     text: str, page: int, source_doc: str, start_id: int = 1
 ) -> List[Dict]:
+    """Extract Q&A pairs from text using simple rules."""
     qa_pairs = []
     sentences = sent_tokenize(text)
     qa_id = start_id
 
     for sentence in sentences:
         s = sentence.strip()
+        timestamp = datetime.now().isoformat()
 
         # Definition rule
         match = re.match(r"^([A-Z][a-zA-Z\s\-]+?) is (a|an|the) (.+)", s)
@@ -46,12 +53,12 @@ def extract_qa_from_text(
             term, _, definition = match.groups()
             qa_pairs.append(
                 {
-                    "id": f"qa_{qa_id:03d}",
+                    "id": f"qa_{qa_id:04d}",
                     "question": f"What is {term.strip()}?",
                     "answer": definition.strip().rstrip("."),
                     "source_document": source_doc,
                     "page_number": page,
-                    "confidence": "high",
+                    "created_at": timestamp,
                     "category": "definition",
                 }
             )
@@ -63,12 +70,12 @@ def extract_qa_from_text(
             condition, symptoms = match.groups()
             qa_pairs.append(
                 {
-                    "id": f"qa_{qa_id:03d}",
+                    "id": f"qa_{qa_id:04d}",
                     "question": f"What are the symptoms of {condition.strip()}?",
                     "answer": symptoms.strip(),
                     "source_document": source_doc,
                     "page_number": page,
-                    "confidence": "high",
+                    "created_at": timestamp,
                     "category": "symptoms",
                 }
             )
@@ -80,12 +87,12 @@ def extract_qa_from_text(
             condition, treatment = match.groups()
             qa_pairs.append(
                 {
-                    "id": f"qa_{qa_id:03d}",
+                    "id": f"qa_{qa_id:04d}",
                     "question": f"How is {condition.strip()} treated?",
                     "answer": treatment.strip(),
                     "source_document": source_doc,
                     "page_number": page,
-                    "confidence": "high",
+                    "created_at": timestamp,
                     "category": "treatment",
                 }
             )
@@ -97,12 +104,12 @@ def extract_qa_from_text(
             disease, cause = match.groups()
             qa_pairs.append(
                 {
-                    "id": f"qa_{qa_id:03d}",
+                    "id": f"qa_{qa_id:04d}",
                     "question": f"What causes {disease.strip()}?",
                     "answer": cause.strip(),
                     "source_document": source_doc,
                     "page_number": page,
-                    "confidence": "high",
+                    "created_at": timestamp,
                     "category": "cause",
                 }
             )
@@ -111,49 +118,100 @@ def extract_qa_from_text(
     return qa_pairs
 
 
-def process_documents(input_path: Path, output_path: Path, max_qas: int = 50):
+def save_to_sqlite(db_path: Path, qa_pairs: List[Dict]):
+    """Save extracted Q&A pairs to SQLite database."""
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS qa_pairs (
+            id TEXT PRIMARY KEY,
+            question TEXT,
+            answer TEXT,
+            source_document TEXT,
+            page_number INTEGER,
+            created_at TEXT,
+            category TEXT
+        )
+    """
+    )
+
+    for qa in qa_pairs:
+        cur.execute(
+            """
+            INSERT OR REPLACE INTO qa_pairs VALUES (?, ?, ?, ?, ?, ?, ?)
+        """,
+            (
+                qa["id"],
+                qa["question"],
+                qa["answer"],
+                qa["source_document"],
+                qa["page_number"],
+                qa["created_at"],
+                qa["category"],
+            ),
+        )
+
+    conn.commit()
+    conn.close()
+    logger.info(f"✅ Saved {len(qa_pairs)} Q&A pairs to database: {db_path}")
+
+
+def process_documents(input_path: Path, db_path: Path, max_qas: int = 100):
+    """Load cleaned data, extract Q&A pairs, and save to SQLite."""
+    logger.info(f"📥 Loading cleaned data from: {input_path}")
     with open(input_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    qa_list = []
+    all_qas = []
     current_id = 1
 
-    # Handle multiple documents
     for doc in data:
         filename = doc.get("filename", "unknown.pdf")
         pages = doc.get("pages", [])
 
         for page in pages:
-            if len(qa_list) >= max_qas:
+            if len(all_qas) >= max_qas:
                 break
-
             text = page.get("text", "")
             page_num = page.get("page", 0)
-
             qas = extract_qa_from_text(text, page_num, filename, current_id)
-            for qa in qas:
-                if len(qa_list) >= max_qas:
-                    break
-                qa_list.append(qa)
-                current_id += 1
+            all_qas.extend(qas)
+            current_id += len(qas)
 
-        if len(qa_list) >= max_qas:
+        if len(all_qas) >= max_qas:
             break
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump({"qa_pairs": qa_list}, f, ensure_ascii=False, indent=2)
-
-    print(f"[✓] Generated {len(qa_list)} Q&A pairs")
-    print(f"[→] Output saved to: {output_path}")
+    save_to_sqlite(db_path, all_qas)
+    logger.info(f"🏁 Q&A extraction completed. Total pairs: {len(all_qas)}")
 
 
 def main():
-    input_json = Path(
-        r"D:\Data_Engineer_Task\task1_multimodal\outputs\extracted_text\extracted_data_cleaned.json"
+    parser = argparse.ArgumentParser(
+        description="Generate Q&A pairs and store in SQLite DB."
     )
-    output_json = Path(r"D:\Data_Engineer_Task\task1_multimodal\outputs\qa_pairs.json")
+    parser.add_argument(
+        "--input",
+        type=str,
+        default="outputs/extracted_text/extracted_data_cleaned.json",
+        help="Path to input cleaned JSON file",
+    )
+    parser.add_argument(
+        "--db",
+        type=str,
+        default="outputs/qa_data.db",
+        help="Path to SQLite database output file",
+    )
+    parser.add_argument(
+        "--limit", type=int, default=100, help="Maximum number of Q&A pairs to generate"
+    )
+    args = parser.parse_args()
 
-    process_documents(input_json, output_json, max_qas=50)
+    input_json = Path(args.input)
+    db_path = Path(args.db)
+
+    process_documents(input_json, db_path, max_qas=args.limit)
 
 
 if __name__ == "__main__":
